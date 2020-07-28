@@ -4,10 +4,11 @@ library("circlize")
 
 # 读取存放在csv文件中的数据
 df0 <- read.csv("network_flow.csv", stringsAsFactors=FALSE)
-chordDiagram(x = df0, annotationTrack = "grid")    # 该函数默认绘图，每次随机分配颜色
+# chordDiagram(x = df0, annotationTrack = "grid")    # 该函数默认绘图，每次随机分配颜色
 
 # 以下为自定义颜色绘图
 # 读取配色和label
+# label和数据里的数量和名称必须匹配，不能多也不能少
 df1 <- read.csv("network_plot.csv", stringsAsFactors=FALSE)
 # 绘图
 chordDiagram(x = df0, grid.col = df1$col, transparency = 0.25,
