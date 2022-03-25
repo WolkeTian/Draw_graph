@@ -9,6 +9,7 @@ df0 <- read.csv("network_flow.csv", stringsAsFactors=FALSE)
 # 增加link.visible = df0$flow < 0,为只画负的，相应只画正的
 # clolor = 'red'或 '#FF0000'等指定颜色,以及轮行指定颜色：col = df0$rowcol等
 # 后可跟透明度，根据高低强调或区分，比如#FF000080 80是透明度
+# 分配grid.col时一定注意order=df1$region
 
 # 以下为自定义颜色绘图
 # 读取配色和label
