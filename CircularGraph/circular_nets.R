@@ -5,6 +5,8 @@ library("circlize")
 # 读取存放在csv文件中的数据
 df0 <- read.csv("network_flow.csv", stringsAsFactors=FALSE)
 # chordDiagram(x = df0, annotationTrack = "grid")    # 该函数默认绘图，每次随机分配颜色
+# 增加link.visible = df0$flow < 0,为只画负的，相应只画正的
+# clolor = 'red'或 '#FF0000'等指定颜色,以及轮行指定颜色：col = df0$rowcol等
 
 # 以下为自定义颜色绘图
 # 读取配色和label
