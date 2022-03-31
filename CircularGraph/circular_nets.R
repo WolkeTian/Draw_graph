@@ -23,6 +23,7 @@ chordDiagram(x = df0, grid.col = df1$col, transparency = 0.25,
 
 
 # 添加labels
+#可添加font.family="Arial Black"更改字体
 circos.trackPlotRegion(
   track.index = 1, 
   bg.border = NA,  # 外边圆环的轮廓宽度
